@@ -38,3 +38,12 @@ Next.js ist ein leistungsstarkes, auf React basierendes Framework, das mehrere R
 |------|---------------------|---------------|------------------------------------------|------------------|------------------|
 | Next.js | Tief bis wenig (abhängig von Anbieter) | Open Source | CHF 0 auf Vercel für Hobby tier | Tief | Hoch (vergrössert sich mit Traffic) |
 
+## Business Needs
+- **Preissicherheit**: Next.js ist Open-Source => keine Lizenzgebühren, Kosten hängen vom Hosting ab: Vercel "Pay-as-you-go"-Modell (bequem, aber bei hohem Traffic teurer),eigener Server fixe monatliche Kosten bietet
+- **Risikotoleranz**: Next.js ist der aktuelle Industriestandard für React-Frameworks und wird von Vercel unterstützt. Das Risiko, dass die Technologie plötzlich verschwindet, ist extrem gering.
+- **Unabhängigkeit von Cloud-Diensten**: Next.js ist zwar für Vercel optimiert, kann aber mit Docker auf fast jedem Cloud-Anbieter oder On-Premise betrieben werden. Man ist also nicht "gefangen" (kein Vendor Lock-in).
+
+## Scalability
+|Name|Horizontal Scaling|Host Provider Headroom|Additional Notes
+|--|--|--|--|
+|Next.js (SSG/ISR)|Exzellent -> Hybrid-Rendering (SSG, SSR)|Sehr hoch -> skaliert bei Managed Provider automatisch und fast unbegrenzt|Performance bleibt auch bei wachsender Komplexität stabil|
